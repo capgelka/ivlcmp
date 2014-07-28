@@ -1,0 +1,9 @@
+
+#ifdef MULTIPLAYER
+
+{~add-ons/Mine/maps}
+
+{~add-ons/Mine/scenarios}
+
+#endif
+

@@ -1,0 +1,38 @@
+﻿#textdomain wesnoth-ivl
+[textdomain]
+    name="wesnoth-ivl"
+[/textdomain]
+
+# wmlscope: set export=no
+[campaign]
+    id=JUST_A_CHIlD'S_NIGHTMARE
+    rank=5
+    icon="data/campaigns/Heir_To_The_Throne/images/units/konrad-lord-leading.png"
+    name= _ "just a child's Nightmare"
+    abbrev= _ "ivl"
+    define=CAMPAIGN_JUST_A_CHIlD'S_NIGHTMARE
+    first_scenario=01_The_Beggining
+    difficulties=EASY,NORMAL,HARD
+    difficulty_descriptions={MENU_IMG_TXT2 "units/elves-wood/fighter.png~RC(magenta>red)" _"Fighter" _"(Beginner)"} +
+    ";*" + {MENU_IMG_TXT2 "units/elves-wood/hero.png~RC(magenta>red)" _"Hero" _"(Normal)"} +
+    ";" + {MENU_IMG_TXT2 "data/add-ons/JUST_A_CHIlD'S_NIGHTMARE/images/units/gg.png" _"Champion" _"(Challenging)"}
+    description= _ "Fight to regain the throne of Wesnoth, of which you are the legitimate heir.
+" + _"(Novice level, 23 scenarios.)"
+    image="data/add-ons/Heir_To_The_Throne/images/campaign_image.png"
+  
+[/campaign]
+
+#ifdef CAMPAIGN_JUST_A_CHIlD'S_NIGHTMARE
+[binary_path]
+    path=data/add-ons/JUST_A_CHIlD'S_NIGHTMARE
+[/binary_path]
+{~add-ons/JUST_A_CHIlD'S_NIGHTMARE/utils}
+{~add-ons/JUST_A_CHIlD'S_NIGHTMARE/scenarios}
+{~add-ons/JUST_A_CHIlD'S_NIGHTMARE/terrain-graphics}
+{~add-ons/JUST_A_CHIlD'S_NIGHTMARE/terrain.cfg}
+[+units]
+    {~add-ons/JUST_A_CHIlD'S_NIGHTMARE/units}
+[/units]
+
+
+#endif
