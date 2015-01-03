@@ -1,0 +1,69 @@
+#textdomain wesnoth-ivl
+
+[unit_type]
+    id=Sinklar
+    name= _ "Sinklar"
+    race=human
+    image="units/gg.png"
+      [leading_anim]
+          [frame]
+              begin=-400
+              end=-200
+              image="units/gg_lead_000.png"
+          [/frame]
+          [frame]
+              begin=-200
+              end=-100
+              image="units/gg_lead_001.png"
+          [/frame]
+          [frame]
+              begin=-100
+              end=150
+              image="units/gg_lead_002.png"
+          [/frame]
+          [frame]
+              begin=150
+              end=300
+              image="units/gg_lead_003.png"
+          [/frame]
+          [frame]
+              begin=300
+              end=450
+              image="units/gg_lead_004.png"
+          [/frame]
+          [frame]
+              begin=450
+              end=600
+              image="units/gg_lead_000.png"
+          [/frame]
+          [frame]
+              begin=600
+              end=700
+              image="units/gg_lead_000.png"
+          [/frame]
+      [/leading_anim]
+    ellipse="misc/ellipse"
+    hitpoints=33
+    [abilities]
+        {ABILITY_LEADERSHIP_LEVEL_3}
+    [/abilities]
+    movement_type=smallfoot
+!    movement=7
+    experience=28
+    level=1
+    alignment=neutral
+    advances_to=Sinklar Lead
+    usage=mixed fighter
+    die_sound={SOUND_LIST:HUMAN_DIE}
+    [attack]
+        name=staff
+        description= _"sword"
+        icon=attacks/sword-human.png
+        type=pierce
+        range=melee
+        damage=11
+        number=2
+    [/attack]
+
+[/unit_type]
+# #undef HTTT_FIGHTER
