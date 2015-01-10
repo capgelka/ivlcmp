@@ -1,0 +1,36 @@
+﻿#textdomain wesnoth-ivl
+[textdomain]
+    name="wesnoth-ivl"
+[/textdomain]
+
+# wmlscope: set export=no
+[campaign]
+    id=The_undoing_of_Ivlentiy_the_Great
+    rank=5
+    icon="data/add-ons/The_undoing_of_Ivlentiy_the_Great/images/units/sinklar.png"
+    name= _ "The undoing of Ivlentiy the Great"
+    abbrev= _ "ivl"
+    define=CAMPAIGN_The_undoing_of_Ivlentiy_the_Great
+    first_scenario="01_The_Beggining"
+    difficulties=EASY,NORMAL,HARD
+    difficulty_descriptions={MENU_IMG_TXT2 "units/elves-wood/fighter.png~RC(magenta>red)" _"Fighter" _"(Beginner)"} +
+    ";*" + {MENU_IMG_TXT2 "units/elves-wood/hero.png~RC(magenta>red)" _"Hero" _"(Normal)"} +
+    ";" + {MENU_IMG_TXT2 "data/add-ons/The_undoing_of_Ivlentiy_the_Great/images/units/gg.png" _"Champion" _"(Challenging)"}
+    description= _ "Fight to regain the throne of Wesnoth, of which you are the legitimate heir.
+" + _"(Novice level, 23 scenarios.)"
+    image="data/add-ons/The_undoing_of_Ivlentiy_the_Great/images/portraits/sinklar.png"
+[/campaign]
+
+#ifdef CAMPAIGN_The_undoing_of_Ivlentiy_the_Great
+[binary_path]
+    path=data/add-ons/The_undoing_of_Ivlentiy_the_Great
+[/binary_path]
+{~add-ons/The_undoing_of_Ivlentiy_the_Great/utils}
+{~add-ons/The_undoing_of_Ivlentiy_the_Great/scenarios}
+{~add-ons/The_undoing_of_Ivlentiy_the_Great/terrain-graphics}
+{~add-ons/The_undoing_of_Ivlentiy_the_Great/terrain.cfg}
+[+units]
+    {~add-ons/The_undoing_of_Ivlentiy_the_Great/units}
+[/units]
+
+#endif

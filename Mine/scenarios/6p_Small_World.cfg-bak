@@ -1,0 +1,108 @@
+#textdomain wesnoth-smm
+
+[multiplayer]
+    id=Battle
+
+    name= _ "Small_World"
+
+    map_data="{~add-ons/Mine/maps/Small_World.map}"
+    description= _ "Too small for six fractions"
+    random_start_time="no"
+
+    {DEFAULT_SCHEDULE}
+    {DEFAULT_MUSIC_PLAYLIST}
+    {ABILS}
+    {PENTOGRAM 15}
+
+    [side]
+        side=1
+        type=General
+
+        canrecruit=yes
+        recruit=Cavalryman,Horseman,Spearman,Fencer,Heavy Infantryman,Bowman,Mage,Merman Fighter,Peasant
+        controller=Human
+        gold=175
+
+        team_name=Loyalists
+        user_team_name= _ "teamname^Loyalists"
+
+        village_gold=1
+        fog=yes
+    [/side]
+
+    [side]
+        side=2
+        type=Elvish Captain
+
+        canrecruit=yes
+        recruit=Elvish Fighter,Elvish Archer,Mage,Elvish Shaman,Elvish Scout,Wose,Merman Hunter
+        controller=human
+        team_name=Rebels
+        user_team_name= _ "teamname^Rebels"
+        gold=100
+        village_gold=1
+        fog=yes
+    [/side]
+    [side]
+        side=3
+
+        type=Orcish Warrior
+        canrecruit=yes
+        recruit=Orcish Grunt,Troll Whelp,Wolf Rider,Orcish Archer,Orcish Assassin,Naga Fighter,Goblin Spearman
+        controller=human
+        team_name=Northerners
+        user_team_name= _ "teamname^Northerners"
+        gold=100
+        village_gold=1
+        fog=yes
+    [/side]
+
+    [side]
+        side=4
+        type=Dwarvish Steelclad
+
+        canrecruit=yes
+        recruit=Dwarvish Guardsman,Dwarvish Fighter,Dwarvish Ulfserker,Dwarvish Thunderer,Thief,Poacher,Footpad,Gryphon Rider
+        controller=human
+        team_name=Knalgan Alliance
+        user_team_name= _ "teamname^Knalgan Alliance"
+        gold=100
+        village_gold=1
+        fog=yes
+    [/side]
+    [side]
+        side=5
+        type=Dark Sorcerer
+
+        canrecruit=yes
+        recruit=Skeleton,Skeleton Archer,Walking Corpse,Ghost,Vampire Bat,Dark Adept,Ghoul
+        controller=human
+        team_name=Undead
+        user_team_name= _ "teamname^Undead"
+        gold=100
+        village_gold=1
+        fog=yes
+    [/side]
+    [side]
+        side=6
+        canrecruit=yes
+        controller=human
+        team_name=Strangers
+        user_team_name= _ "teamname^Strangers"
+        gold=200
+        village_gold=1
+        fog=yes
+    [/side]
+
+    [event]
+        name=start
+        [message]
+            message= _ "This map introduces special features for six races:
+          * Rebels could use woses to grow new forest
+          * Northerners are able to destroy villages with wolf riders to get some income
+          * Loyalists's peasants are able to build villages
+          * Knalgan Alliance could use their warriors to build castles
+          * Undead use pentagrams to darken specific areas"
+        [/message]
+    [/event]
+[/multiplayer]
