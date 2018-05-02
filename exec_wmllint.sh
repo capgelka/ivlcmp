@@ -1,2 +1,7 @@
-#!/bin/bash 
-python2 /usr/share/games/wesnoth/1.12/data/tools/wmlindent *
+#!/bin/bash
+
+if [[ -z "${WESNOTH_PATH}" ]]; then
+   export WESNOTH_PATH="/home/${USER}/Data/Steam/steamapps"
+fi
+python3 "${WESNOTH_PATH}/common/wesnoth/data/tools/wmlindent" *
+python3 "${WESNOTH_PATH}/common/wesnoth/data/tools/wmllint" *
